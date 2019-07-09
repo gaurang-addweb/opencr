@@ -25,7 +25,7 @@ Start by `use`-ing the class and creating an instance.
 ```php
 use OpenCr\InitiateReports;
 ```
-Token getting from  below api url and pass correct credentials for login in body part(i.e email, password)
+Token generate from  below api url and pass correct credentials for login in body part(i.e email, password)
 
 (http://laravel.open.cr/eng/api/v1/auth/login)
 
