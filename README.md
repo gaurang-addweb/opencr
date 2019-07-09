@@ -25,6 +25,11 @@ Start by `use`-ing the class and creating an instance.
 ```php
 use OpenCr\InitiateReports;
 ```
+Token getting from  below api url and pass correct credentials for login in body part(i.e email, password)
+
+(http://laravel.open.cr/eng/api/v1/auth/login)
+
+
 Please use instance in particular function and pass some mandatory parameters.
 
 ```
@@ -32,9 +37,7 @@ $parameters = array();
 
 $parameters['token'] = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjY1LCJpc3MiOiJodHRwOi8vbGFyYXZlbC5vcGVuLmNyL2VuZy9hcGkvdjEvYXV0aC9sb2dpbiIsImlhdCI6MTU2MjY1NTM4NCwiZXhwIjoxNTYyNjU4OTg0LCJuYmYiOjE1NjI2NTUzODQsImp0aSI6IlVKSlBmamR4Zm1qdUtSMHcifQ.xFLzAQeSuE2QRwEUjNFrRVuuG9RzOlYKK0wxAhrCz6w'; // pass token which is getting from login.
 
-//Token getting from  below api url and pass correct credentials for login in body part(i.e email, password)
 
-(http://laravel.open.cr/eng/api/v1/auth/login)
 
 $parameters['artistID'] = '1';//pass correct artis id
 $parameters['edit_mode'] = 'edit_mode';
