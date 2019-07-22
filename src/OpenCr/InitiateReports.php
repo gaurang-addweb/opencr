@@ -12,7 +12,8 @@ class InitiateReports
       // $password = "dev2018";
        
       // create a new cURL resource
-      $url = "http://laravel.open.cr/eng/api/v1/report/get_param_to_url_redirect?token=".$parameters['token'];    
+      //$url = "http://laravel.open.cr/eng/api/v1/report/get_param_to_url_redirect?token=".$parameters['token'];    
+      $url = "https://opencr.addwebprojects.com/eng/api/v1/report/get_param_to_url_redirect?token=".$parameters['token'];
       $ch = curl_init();
       // set URL and other appropriate options
       curl_setopt($ch, CURLOPT_URL, $url);
